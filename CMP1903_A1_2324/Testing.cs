@@ -23,7 +23,9 @@ namespace CMP1903_A1_2324
 
             Game test = new Game();
 
+            Console.WriteLine("test one");
             int[] firstTest = test.Run(); // First instance of game made
+            Console.WriteLine("test two");
             int[] secondTest = test.Run(); // Second instance of game made
 
             bool areEqual = true;
