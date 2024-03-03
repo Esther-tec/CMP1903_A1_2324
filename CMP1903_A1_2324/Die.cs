@@ -17,8 +17,6 @@ namespace CMP1903_A1_2324
 
 
         //Method
-        internal class Die
-    {
         // Property
         public int currentValue { get; private set; }
 
@@ -34,7 +32,6 @@ namespace CMP1903_A1_2324
             // Return the rolled value
             return currentValue;
         }
-    }
 
 
     }
