@@ -22,9 +22,10 @@ namespace CMP1903_A1_2324
             Debug.Assert(die.Roll() >= 1 && die.Roll() <= 6, "Die value is out of range"); // Correct the range check
 
             Game test = new Game();
-
+            Console.WriteLine("");
             Console.WriteLine("test one");
             int[] firstTest = test.Run(); // First instance of game made
+            Console.WriteLine("");
             Console.WriteLine("test two");
             int[] secondTest = test.Run(); // Second instance of game made
 
