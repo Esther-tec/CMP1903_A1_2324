@@ -17,6 +17,24 @@ namespace CMP1903_A1_2324
 
 
         //Method
+        internal class Die
+    {
+        // Property
+        public int currentValue { get; private set; }
+
+        // Method to roll the die
+        public int Roll()
+        {
+            // Create a new instance of Random to generate random numbers
+            Random random = new Random();
+
+            // Roll the die and assign the result to currentValue
+            currentValue = random.Next(1, 7); // Generates a random number between 1 and 6 (inclusive)
+
+            // Return the rolled value
+            return currentValue;
+        }
+    }
 
 
     }
