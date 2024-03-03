@@ -16,5 +16,27 @@ namespace CMP1903_A1_2324
          */
 
         //Method
+        public void GameTest()
+        {
+            Die die = new Die();
+            Debug.Assert(die.Roll() >= 1 && die.Roll() <= 6, "Die value is out of range"); // Correct the range check
+
+            Game test = new Game();
+
+            int[] firstTest = test.Run(); // First instance of game made
+            int[] secondTest = test.Run(); // Second instance of game made
+
+            bool areEqual = true;
+            for (int i = 0; i < firstTest.Length; i++)
+            {
+                if (firstTest[i] != secondTest[i])
+                {
+                    areEqual = false;
+                    break;
+                }
+            }
+
+            Debug.Assert(!areEqual, "GameTest unsuccessful"); // Check if the results are not equal
+        }
     }
 }
