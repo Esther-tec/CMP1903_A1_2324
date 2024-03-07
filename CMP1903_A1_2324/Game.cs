@@ -16,6 +16,24 @@ namespace CMP1903_A1_2324
          */
 
         //Methods
+        public int[] Run()
+        {
+            Die die = new Die();
+            int rollCount = 3; 
+            int total = 0;
+            int[] results = new int[rollCount];
+
+            for (int i = 0; i < rollCount; i++)
+            {
+                results[i] = die.Roll();
+                total += results[i];
+                Console.WriteLine("Die" + (i + 1) + " is " + results[i]);
+            }
+
+            Console.WriteLine("Total is " + total);
+
+            return results;
+        }
 
     }
 }
